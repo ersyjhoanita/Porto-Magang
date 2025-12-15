@@ -1,164 +1,169 @@
-/*-- ================= FONT ================= */
+/* ================= FONT ================= */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
-  /* ================= RESET & GLOBAL ================= */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  body {
-    background: #f8f9fa;
-    color: #222;
-    font-weight: 400; /* Regular */
-  }
-
-  /* ================= NAVBAR ================= */
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: white;
-    padding: 20px 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,.05);
-  }
-
-  .logo {
-    font-size: 24px;
-    font-weight: 700; /* Bold */
-  }
-
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 25px;
-  }
-
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500; /* Medium */
-    transition: .2s;
-  }
-
-  .nav-links a:hover {
-    color: #0066ff;
-  }
-
-  /* ================= GLOBAL SECTION ================= */
-  .section {
-    padding: 100px 80px;
-  }
-
-  h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    font-weight: 600; /* Semi Bold */
-  }
-
-  /* ================= HOME ================= */
-  .home-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 60px;
-  }
-
-  .home-text h1 {
-    font-size: 42px;
-    line-height: 1.3;
-    font-weight: 700; /* Bold */
-  }
-
- .subtitle {
-  margin-top: 12px;
-  font-size: 24px;        
-  font-weight: 600;       
-  color: #666666;         
-  letter-spacing: 0.3px; 
+/* ================= RESET & GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
 }
 
-  .name-gradient {
-    background: linear-gradient(90deg, #0066ff, #ff4dcc);
- -webkit-background-clip: text;
-    color: transparent;
-    font-weight: 700; /* Bold */
-  }
+body {
+  background: #f8f9fa;
+  color: #222;
+  font-weight: 400;
+}
 
-  /* tombol khusus HOME */
+/* ================= NAVBAR ================= */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: white;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: .2s;
+}
+
+.nav-links a:hover {
+  color: #0066ff;
+}
+
+/* ================= GLOBAL SECTION ================= */
+.section {
+  padding: 80px 60px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ================= HOME ================= */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.home-text h1 {
+  font-size: 42px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 0.3px;
+}
+
+.name-gradient {
+  background: linear-gradient(90deg, #0066ff, #ff4dcc);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+
+/* ================= BUTTON GLOBAL ================= */
+.btn,
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* tombol utama */
+.btn {
+  background: #0066ff;
+  color: white;
+}
+
+.btn:hover {
+  background: #004bb8;
+}
+
+/* tombol outline */
+.btn-outline {
+  border: 2px solid #0066ff;
+  color: #0066ff;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #0066ff;
+  color: white;
+}
+
+/* tombol khusus HOME */
 .home-section .btn,
 .home-section .btn-outline {
   font-size: 15px;
-  padding: 14px 28px;   /* lebih lega */
-  line-height: 1.2;     /* teks lebih natural */
+  padding: 14px 28px;
 }
 
-  .buttons {
-    margin-top: 25px;
-    display: flex;
-    gap: 15px;
-  }
+/* container tombol HOME */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
 
-  .btn {
-    background: #0066ff;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500; /* Medium */
-    transition: .3s;
-  }
+/* foto HOME */
+.home-photo img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+}
 
-  .btn:hover {
-    background: #004bb8;
-  }
+/* ================= EXPERIENCE ================= */
+.experience-card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
 
-  .btn-outline {
-    border: 2px solid #0066ff;
-    color: #0066ff;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 500; /* Medium */
-    transition: .3s;
-  }
-
-  .btn-outline:hover {
-    background: #0066ff;
-    color: white;
-  }
-
-  .home-photo img {
-    width: 320px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,.1);
-  }
-
-  /* ================= ABOUT & EXPERIENCE ================= */
-  .experience-card {
-    background: white;
-    padding: 20px 25px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,.08);
-    margin-bottom: 20px;
-    font-weight: 400; /* Regular */
-  }
-
-  /* ================= SKILLS ================= */
+/* ================= SKILLS ================= */
 .skills-section {
   max-width: 1100px;
   margin: auto;
   padding: 30px;
-  background: #ffffff;
+  background: white;
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
@@ -176,7 +181,6 @@
   margin: 25px 0 10px;
 }
 
-/* HARD SKILLS (GRID) */
 .hard-skill-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -184,9 +188,8 @@
   margin-bottom: 40px;
 }
 
-/* HARD SKILLS CARD */
 .skill-card {
-  background: #fff;
+  background: white;
   padding: 20px 10px;
   text-align: center;
   border-radius: 14px;
@@ -196,7 +199,6 @@
 
 .skill-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 7px 16px rgba(0,0,0,0.15);
 }
 
 .skill-card img {
@@ -210,7 +212,6 @@
   font-weight: 600;
 }
 
-/* SOFT SKILLS LIST */
 .soft-skill-list {
   list-style: none;
   font-size: 18px;
@@ -224,55 +225,47 @@
   font-weight: bold;
 }
 
-  /* ================= PROJECTS ================= */
-  .project-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-  }
+/* ================= PROJECTS ================= */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
 
-  .project-card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 3px 10px rgba(0,0,0,.08);
-    transition: .3s;
-    font-weight: 400; /* Regular */
-  }
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0,0,0,.08);
+  transition: .3s;
+}
 
-  .project-card:hover {
-    transform: translateY(-5px);
-  }
+.project-card:hover {
+  transform: translateY(-5px);
+}
 
-  .project-img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 10px;
-  }
-  
+.project-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
 
-/* container tombol */
+/* tombol PROJECT */
 .project-links {
   display: flex;
-  justify-content: space-between; /* kiri & kanan */
   gap: 10px;
   margin-top: 12px;
 }
 
-/* tombol umum */
-.btn {
+/* tombol kecil PROJECT */
+.project-links .btn {
   padding: 8px 14px;
-  border-radius: 8px;
-  text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
-  color: white;
-  transition: 0.3s;
 }
 
-/* GitHub */
+/* warna tombol PROJECT */
 .github {
   background: #2563eb;
 }
@@ -281,7 +274,6 @@
   background: #1e40af;
 }
 
-/* Live Preview */
 .preview {
   background: #10b981;
 }
@@ -290,82 +282,73 @@
   background: #059669;
 }
 
+/* ================= CERTIFICATES ================= */
+.certificate-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
 
+.certificate-card {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.08);
+  transition: .3s;
+}
 
+.certificate-card:hover {
+  transform: translateY(-6px);
+}
 
+.certificate-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
 
+.view-cert-btn {
+  display: inline-block;
+  margin-top: 8px;
+  background: #0066ff;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
 
+/* ================= CONTACT ================= */
+.contact-section {
+  text-align: center;
+}
 
-  /* ================= CERTIFICATES ================= */
-  .certificate-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-  }
+.contact-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
 
-  .certificate-card {
-    background: white;
-    padding: 20px;
-    border-radius: 14px;
-    text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,.08);
-    transition: .3s;
-    font-weight: 400; /* Regular */
-  }
+.contact-item img {
+  width: 26px;
+}
 
-  .certificate-card:hover {
-    transform: translateY(-6px);
-  }
+.contact-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
 
-  .certificate-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-
-  .view-cert-btn {
-    display: inline-block;
-    margin-top: 8px;
-    background: #0066ff;
-    color: white;
-    padding: 8px 18px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500; /* Medium */
-  }
-
-  /* ================= CONTACT ================= */
-  .contact-section {
-    text-align: center;
-  }
-
-  .contact-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-top: 15px;
-  }
-
-  .contact-item img {
-    width: 26px;
-  }
-
-  .contact-item a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    font-weight: 500; /* Medium */
-  }
-
-  .contact-item a:hover {
-    color: #0066ff;
-  }
-
-
+.contact-item a:hover {
+  color: #0066ff;
+}
 
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
@@ -422,9 +405,8 @@
 }
 
 @media (max-width: 480px) {
-  .btn,
-  .btn-outline {
+  .home-section .btn,
+  .home-section .btn-outline {
     width: 100%;
-    text-align: center;
   }
 }
